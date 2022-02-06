@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <title>UEC Kanmeiban Generator</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="style.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <script src="script.js" charset="utf-8"></script>
+</head>
+
+<body>
+<header>
+  <h2>UEC Kanmeiban Generator</h2>
+  <div style="text-align:right;">
+    <a href="https://github.com/macchanism/uec-kanmeiban-generator/blob/main/README.md">README</a>
+  </div>
+</header>
+
+<main>
+  <div id="square">
+    <div id="band"></div>
+    <p id="JPlabel">サークル会館</p>
+    <p id="ENlabel">UEC Club House</p>
+  </div>
+
+  <div id="Generator">
+    <form name="Request" action="#">
+      <div style="display:flex;">
+        <div style="display:flex; margin:auto 5px auto auto;">
+          <table>
+            <caption>JP</caption>
+            <tbody style="text-align:left;">
+              <tr>
+                <td>building</td><td><input name="buildingJP" type="text" value="サークル会館"></td>
+              </tr>
+              <tr>
+                <td>font size</td><td><input name="fontsizeJP" type="number" min="10" max="100" value="65"> px</td>
+              </tr>
+              <tr>
+                <td>margin-top</td><td><input name="TpositionJP" type="number" min="0" max="500" value="33"> px</td>
+              </tr>
+              <tr>
+                <td>margin-left</td><td><input name="LpositionJP" type="number" min="0" max="500" value="71"> px</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div style="display:flex; margin:auto auto auto 5px;">
+          <table>
+            <caption>EN</caption>
+            <tbody style="text-align:left;">
+              <tr>
+                <td>building</td><td><input name="buildingEN" type="text" value="UEC Club House"></td>
+              </tr>
+              <tr>
+                <td>font size</td><td><input name="fontsizeEN" type="number" min="10" max="100" value="36"> px</td>
+              </tr>
+              <tr>
+                <td>margin-top</td><td><input name="TpositionEN" type="number" min="0" max="500" value="112"> px</td>
+              </tr>
+              <tr>
+                <td>margin-left</td><td><input name="LpositionEN" type="number" min="0" max="500" value="72"> px</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <p style="margin-top:15px; text-align:center;"><input type="button" value="Generate!!" onclick="generate()"> to preview.</p>
+    </form>
+  </div>
+
+  <div id="Captor">
+    <p><button type="button" name="CaptureandDL" onclick="capture()">Convert to image</button> and download it below.</p>
+  </div>
+
+  <div id="DL">
+    <p>No image is generated.</p>
+  </div>
+</main>
+
+<footer>
+  <small>Copyright &copy; macchanism All Rights Reserved.</small>
+</footer>
+</body>
+</html>
