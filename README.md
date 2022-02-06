@@ -3,7 +3,7 @@
 UECの施設にある、建物名が書かれたパネル(舘名板, kanmeiban)っぽい画像を生成するやつ
 
 ## Usage
-Webブラウザ上で利用する(https://ueckanmeiban.matchaism.net/)
+Webブラウザ上で利用する(https://uec-kanmeiban-generator.matchaism.net/)
 
   - PC推奨
   - ブラウザ上でJavaScriptが動くように設定
