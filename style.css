@@ -1,0 +1,62 @@
+header {
+  margin-bottom:30px;
+  padding-left:5px;
+  padding-right:5px;
+  border-bottom:medium solid #000000;
+}
+
+footer {
+  margin-top:50px;
+  padding-top:10px;
+  padding-bottom:10px;
+  border-top:thin solid #000000;
+  text-align:center;
+}
+
+#square {
+  position:relative;
+  margin:15px auto;
+  width:500px;
+  height:500px;
+  background-color:#0000AF;
+}
+
+#band {
+  position:absolute;
+  margin:5px;
+  width:50px;
+  height:160px;
+  background-color:#32BD32;
+}
+
+#JPlabel {
+  position:absolute;
+  margin-top:33px;
+  margin-left:71px;
+  color:white;
+  font-size:65px;
+}
+
+#ENlabel {
+  position:absolute;
+  margin-top:112px;
+  margin-left:72px;
+  color:white;
+  font-size:36px;
+}
+
+#Generator {
+  margin:30px auto;
+}
+
+#Captor {
+  margin:30px auto;
+  text-align:center;
+}
+
+#DL {
+   margin:30px auto;
+   padding:15px;
+   border:thick double #32a1ce;
+   text-align:center;
+}
