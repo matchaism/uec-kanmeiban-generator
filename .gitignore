@@ -1,0 +1,8 @@
+local/
+
+.DS_Store
+*~
+*.bak
+*.bk
+*.old
+*.swp
