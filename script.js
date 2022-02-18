@@ -10,7 +10,13 @@ function previewer() {
 }
 
 function generator(){
+  // Set --scale-ratio to 1 so that html2canvas will work properly.
+  $(":root").css("--scale-ratio", "1");
+
   html2canvas(document.querySelector('#square')).then(function(canvas) {
+    // Restore the original ratio.
+    $(":root").css("--scale-ratio", "");
+
     let element = document.querySelector('#Display');
     while(element.firstChild){
       element.removeChild(element.firstChild);
