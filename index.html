@@ -73,17 +73,10 @@
     </form>
   </div>
 
-  <div id="Generate">
-    <button type="button" name="generate" onclick="generator()">Generate</button>
-  </div>
-
-  <div id="Display">
-    <p>No image is generated.</p>
-  </div>
-
-  <div id="DL">
-    <button type="button" name="download" onclick="downloader()">Download</button>
-    <p>Downloadできない場合は、<a href="javascript:OpenImgNewTab()">こちら</a></p>
+  <div id="GenerateAndDownload">
+    <button type="button" name="generateanddownload" onclick="GenAndDL()">Generate and Download</button>
+    <p>Downloadできない場合は、<a href="javascript:GenAndOpen()">こちら</a></p>
+    <p>(新しいタブで画像を開くので、長押しや右クリックして保存)</p>
   </div>
 </main>
 
