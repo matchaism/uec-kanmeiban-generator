@@ -107,25 +107,6 @@ footer {
   text-align:center;
 }
 
-#Display {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  margin:30px auto;
-  padding:5px;
-  border:thick double #32a1ce;
-
-  height:var(--displayed-side-length);
-  width:var(--displayed-side-length);
-}
-
-#Display canvas {
-  display: flex;
-  margin:0 auto;
-  transform:scale(var(--scale-ratio));
-}
-
 #GenerateAndDownload {
   margin:50px auto;
   text-align:center;
