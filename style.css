@@ -5,13 +5,13 @@
           calc(var(--original-side-length) * var(--scale-ratio));
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 530px) {
   :root {
-    --scale-ratio: 0.55;
+    --scale-ratio: 0.65;
   }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 350px) {
   :root {
     --scale-ratio: 0.4;
   }
