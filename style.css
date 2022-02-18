@@ -104,10 +104,22 @@ footer {
 }
 
 #Display {
-   margin:30px auto;
-   padding:15px;
-   border:thick double #32a1ce;
-   text-align:center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin:30px auto;
+  padding:15px;
+  border:thick double #32a1ce;
+
+  height:var(--displayed-side-length);
+  width:var(--displayed-side-length);
+}
+
+#Display canvas {
+  margin:0 auto;
+  transform:scale(var(--scale-ratio));
+  transform-origin:0 0;
 }
 
 #DL {
