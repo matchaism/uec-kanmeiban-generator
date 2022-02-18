@@ -10,6 +10,7 @@ function previewer() {
 }
 
 function generator(){
+  previewer()
   html2canvas(document.querySelector('#square')).then(function(canvas) {
     let element = document.querySelector('#Display');
     while(element.firstChild){
