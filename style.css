@@ -18,7 +18,7 @@ footer {
   margin:15px auto;
   width:500px;
   height:500px;
-  background-color:#0000AF;
+  background-color:#1A1AD4;
 }
 
 #band {
@@ -26,7 +26,7 @@ footer {
   margin:5px;
   width:50px;
   height:160px;
-  background-color:#32BD32;
+  background-color:#32D032;
 }
 
 #JPlabel {
@@ -45,18 +45,23 @@ footer {
   font-size:36px;
 }
 
-#Generator {
+#Preview {
   margin:30px auto;
 }
 
-#Captor {
+#Generate {
   margin:30px auto;
   text-align:center;
 }
 
-#DL {
+#Display {
    margin:30px auto;
    padding:15px;
    border:thick double #32a1ce;
    text-align:center;
+}
+
+#DL {
+  margin:30px auto;
+  text-align:center;
 }

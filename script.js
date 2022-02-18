@@ -1,4 +1,4 @@
-function generate() {
+function previewer() {
   $("#JPlabel").html(document.Request.buildingJP.value);
   $("#JPlabel").css("font-size", document.Request.fontsizeJP.value+"px");
   $("#JPlabel").css("margin-top", document.Request.TpositionJP.value+"px");
@@ -9,12 +9,20 @@ function generate() {
   $("#ENlabel").css("margin-left", document.Request.LpositionEN.value+"px");
 }
 
-function capture(){
+function generator(){
   html2canvas(document.querySelector('#square')).then(function(canvas) {
-    var element = document.querySelector('#DL');
+    let element = document.querySelector('#Display');
     while(element.firstChild){
       element.removeChild(element.firstChild);
     }
     element.appendChild(canvas);
   });
+}
+
+function downloader(){
+  let canvas = document.getElementsByTagName('canvas');
+  let dl = document.createElement('a');
+  dl.href = canvas[0].toDataURL();
+  dl.download = "uec_kanmeiban.png";
+  dl.click();
 }

@@ -25,7 +25,7 @@
     <p id="ENlabel">UEC Club House</p>
   </div>
 
-  <div id="Generator">
+  <div id="Preview">
     <form name="Request" action="#">
       <div style="display:flex;">
         <div style="display:flex; margin:auto 5px auto auto;">
@@ -67,16 +67,22 @@
           </table>
         </div>
       </div>
-      <p style="margin-top:15px; text-align:center;"><input type="button" value="Generate!!" onclick="generate()"> to preview.</p>
+      <div style="margin-top:15px; text-align:center;">
+        <input type="button" value="preview" onclick="previewer()">
+      </div>
     </form>
   </div>
 
-  <div id="Captor">
-    <p><button type="button" name="CaptureandDL" onclick="capture()">Convert to image</button> and download it below.</p>
+  <div id="Generate">
+    <button type="button" name="generate" onclick="generator()">Generate</button>
+  </div>
+
+  <div id="Display">
+    <p>No image is generated.</p>
   </div>
 
   <div id="DL">
-    <p>No image is generated.</p>
+    <button type="button" name="download" onclick="downloader()">Download</button>
   </div>
 </main>
 
