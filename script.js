@@ -26,3 +26,10 @@ function downloader(){
   dl.download = "uec_kanmeiban.png";
   dl.click();
 }
+
+function OpenImgNewTab() {
+  let canvas = document.getElementsByTagName('canvas');
+  let opennewtab = document.createElement('a');
+  opennewtab.href = canvas[0].toDataURL();
+  opennewtab.click();
+}
