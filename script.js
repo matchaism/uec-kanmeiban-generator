@@ -9,33 +9,37 @@ function previewer() {
   $("#ENlabel").css("margin-left", document.Request.LpositionEN.value+"px");
 }
 
-function generator(){
+async function generateCanvas(){
   // Set --scale-ratio to 1 so that html2canvas will work properly.
   $(":root").css("--scale-ratio", "1");
 
-  html2canvas(document.querySelector('#square')).then(function(canvas) {
-    // Restore the original ratio.
-    $(":root").css("--scale-ratio", "");
+  const canvas = await html2canvas(document.querySelector('#square'))
 
-    let element = document.querySelector('#Display');
-    while(element.firstChild){
-      element.removeChild(element.firstChild);
-    }
-    element.appendChild(canvas);
+  // Restore the original ratio.
+  $(":root").css("--scale-ratio", "");
+}
+
+function GenAndDL(){
+  previewer();
+  generateCanvas().then(function(canvas){
+    let dl = document.createElement('a');
+    dl.href = canvas.toDataURL();
+    dl.download = "ueckanmeiban.png";
+    dl.click();
+  }).catch(function(err){
+    alert("Failed to generate...");
   });
 }
 
-function downloader(){
-  let canvas = document.getElementsByTagName('canvas');
-  let dl = document.createElement('a');
-  dl.href = canvas[0].toDataURL();
-  dl.download = "uec_kanmeiban.png";
-  dl.click();
-}
-
-function OpenImgNewTab() {
-  let canvas = document.getElementsByTagName('canvas');
-  let opennewtab = document.createElement('a');
-  opennewtab.href = canvas[0].toDataURL();
-  opennewtab.click();
+function GenAndOpen(){
+  previewer();
+  generateCanvas().then(function(canvas){
+    let opennewtab = document.createElement('a');
+    opennewtab.rel = "noopener noreferrer";
+    opennewtab.target = "_blank";
+    opennewtab.href = canvas.toDataURL();
+    opennewtab.click();
+  }).catch(function(err){
+    alert("Failed to generate...");
+  });
 }
