@@ -77,6 +77,27 @@ footer {
   margin:30px auto;
 }
 
+#FormTables {
+  display: flex;
+  gap: 10px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+#FormTables table {
+  display: block;
+}
+
+@media screen and (max-width: 530px) {
+  #FormTables {
+    flex-direction: column;
+  }
+
+  #FormTables table {
+    margin: 0 auto;
+  }
+}
+
 #Generate {
   margin:30px auto;
   text-align:center;
