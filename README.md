@@ -13,8 +13,7 @@ Webブラウザ上で利用する(https://uec-kanmeiban-generator.matchaism.net/
 2. フォントサイズ(font size)を指定
 3. 建物名の位置を調整(margin-topが縦方向、leftが横方向)
 4. `Preview`ボタンを押して、舘名板をプレビュー
-5. 完成したら、`Generate`ボタンで画像を生成
-6. `Download`ボタンでダウンロード
+5. 完成したら、`Generate and Download`ボタンで画像を生成し、ダウンロード
 
 ## Dependency
   - [jQuery](https://jquery.com/)
