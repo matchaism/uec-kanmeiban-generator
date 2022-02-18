@@ -17,6 +17,8 @@ async function generateCanvas(){
 
   // Restore the original ratio.
   $(":root").css("--scale-ratio", "");
+
+  return canvas;
 }
 
 function GenAndDL(){
