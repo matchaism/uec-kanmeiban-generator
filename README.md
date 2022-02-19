@@ -22,3 +22,16 @@ Webブラウザ上で利用する(https://uec-kanmeiban-generator.matchaism.net/
   - [html2canvas](https://html2canvas.hertzen.com/)
     - version 1.4.1
     - [CDN](https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js)
+
+## Contributor
+Special Thanks!!
+
+イカれたメンバーを紹介するぜ！
+
+<div align="center">
+  <a href="https://trpfrog.net"><img src="https://avatars.githubusercontent.com/u/7621012?v=4?s=100" width="100px;" alt=""/><br>
+    <sub>
+      <b>つまみ-TrpFrog</b>
+    </sub>
+  </a>
+</div>
