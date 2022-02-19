@@ -19,53 +19,51 @@
 </header>
 
 <main>
-  <div id="square">
-    <div id="band"></div>
-    <p id="JPlabel">サークル会館</p>
-    <p id="ENlabel">UEC Club House</p>
+  <div id="square-wrapper">
+    <div id="square">
+      <div id="band"></div>
+      <p id="JPlabel">サークル会館</p>
+      <p id="ENlabel">UEC Club House</p>
+    </div>
   </div>
 
   <div id="Preview">
     <form name="Request" action="#">
-      <div style="display:flex;">
-        <div style="display:flex; margin:auto 5px auto auto;">
-          <table>
-            <caption>JP</caption>
-            <tbody style="text-align:left;">
-              <tr>
-                <td>building</td><td><input name="buildingJP" type="text" value="サークル会館"></td>
-              </tr>
-              <tr>
-                <td>font size</td><td><input name="fontsizeJP" type="number" min="10" max="100" value="65"> px</td>
-              </tr>
-              <tr>
-                <td>margin-top</td><td><input name="TpositionJP" type="number" min="0" max="500" value="33"> px</td>
-              </tr>
-              <tr>
-                <td>margin-left</td><td><input name="LpositionJP" type="number" min="0" max="500" value="71"> px</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div style="display:flex; margin:auto auto auto 5px;">
-          <table>
-            <caption>EN</caption>
-            <tbody style="text-align:left;">
-              <tr>
-                <td>building</td><td><input name="buildingEN" type="text" value="UEC Club House"></td>
-              </tr>
-              <tr>
-                <td>font size</td><td><input name="fontsizeEN" type="number" min="10" max="100" value="36"> px</td>
-              </tr>
-              <tr>
-                <td>margin-top</td><td><input name="TpositionEN" type="number" min="0" max="500" value="112"> px</td>
-              </tr>
-              <tr>
-                <td>margin-left</td><td><input name="LpositionEN" type="number" min="0" max="500" value="72"> px</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+      <div id="FormTables">
+        <table>
+          <caption>JP</caption>
+          <tbody style="text-align:left;">
+          <tr>
+            <td>building</td><td><input name="buildingJP" type="text" value="サークル会館"></td>
+          </tr>
+          <tr>
+            <td>font size</td><td><input name="fontsizeJP" type="number" min="10" max="100" value="65"> px</td>
+          </tr>
+          <tr>
+            <td>margin-top</td><td><input name="TpositionJP" type="number" min="0" max="500" value="33"> px</td>
+          </tr>
+          <tr>
+            <td>margin-left</td><td><input name="LpositionJP" type="number" min="0" max="500" value="71"> px</td>
+          </tr>
+          </tbody>
+        </table>
+        <table>
+          <caption>EN</caption>
+          <tbody style="text-align:left;">
+          <tr>
+            <td>building</td><td><input name="buildingEN" type="text" value="UEC Club House"></td>
+          </tr>
+          <tr>
+            <td>font size</td><td><input name="fontsizeEN" type="number" min="10" max="100" value="36"> px</td>
+          </tr>
+          <tr>
+            <td>margin-top</td><td><input name="TpositionEN" type="number" min="0" max="500" value="112"> px</td>
+          </tr>
+          <tr>
+            <td>margin-left</td><td><input name="LpositionEN" type="number" min="0" max="500" value="72"> px</td>
+          </tr>
+          </tbody>
+        </table>
       </div>
       <div style="margin-top:15px; text-align:center;">
         <input type="button" value="Preview" onclick="previewer()">
