@@ -22,8 +22,9 @@ async function generateCanvas(){
 }
 
 function GenAndDL(){
-  previewer();
+  previewer(); // Generator refers the latest previewed content.
   generateCanvas().then(function(canvas){
+    // Generate and click a virtual a-tag content to download.
     let dl = document.createElement('a');
     dl.href = canvas.toDataURL();
     dl.download = "ueckanmeiban.png";
@@ -34,8 +35,9 @@ function GenAndDL(){
 }
 
 function GenAndOpen(){
-  previewer();
+  previewer(); // Generator refers the latest previewed content.
   generateCanvas().then(function(canvas){
+    // Generate and click a virtual a-tag content to open.
     let opennewtab = document.createElement('a');
     opennewtab.rel = "noopener noreferrer";
     opennewtab.target = "_blank";
