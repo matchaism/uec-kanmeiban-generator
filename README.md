@@ -2,10 +2,12 @@
 ## What is this?
 UECの施設にある、建物名が書かれたパネル(舘名板, kanmeiban)っぽい画像を生成するやつ
 
-![](sample.png)
+<div align="center">
+  <img src="./sample.png" alt="sample image"/>
+</div>
 
 ## Usage
-Webブラウザで[UEC Kanmeiban Generator](https://uec-kanmeiban-generator.matchaism.net)にアクセス
+Webブラウザで [UEC Kanmeiban Generator](https://uec-kanmeiban-generator.matchaism.net) にアクセス
 
 1. 建物名(building)を指定
 2. フォントサイズ(font size)を指定
