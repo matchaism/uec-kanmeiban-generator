@@ -29,7 +29,7 @@ header {
 }
 
 footer {
-  margin-top:50px;
+  margin-top:20px;
   padding-top:10px;
   padding-bottom:10px;
   border-top:thin solid #000000;
@@ -108,6 +108,9 @@ footer {
 }
 
 #ShareButton {
-  margin:50px auto;
+  margin-top:50px;
+  margin-bottom:20px;
+  margin-left:auto;
+  margin-right:auto;
   text-align:center;
 }
