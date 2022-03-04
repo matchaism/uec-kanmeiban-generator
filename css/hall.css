@@ -1,6 +1,6 @@
 :root {
   --original-side-width: 700px;
-  --original-side-height: 70px;
+  --original-side-height: 60px;
   --scale-ratio: 1;
   --displayed-side-width:
           calc(var(--original-side-width) * var(--scale-ratio));
@@ -60,11 +60,12 @@
 }
 
 #JPlabel {
-  font-size:30px;
+  font-size:27px;
   color:white;
 }
 
 #ENlabel {
-  font-size:15px;
+  font-size:13px;
   color:white;
+  letter-spacing: 0.2em;
 }
