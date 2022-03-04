@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <title>UEC Kanmeiban Generator</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- For sharing on Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="og:url" content="https://uec-kanmeiban-generator.matchaism.net" />
+  <meta property="og:title" content="UEC Kanmeiban Generator" />
+  <meta property="og:description" content="UniqueでExcitingなUECの舘名盤ジャネレーター" />
+  <meta property="og:image" content="sample.png" />
+  <!-- CSS -->
+  <link href="css/custom.css" rel="stylesheet">
+  <link href="css/common.css" rel="stylesheet">
+  <link href="css/hall.css" rel="stylesheet">
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <script src="js/script.js" charset="utf-8"></script>
+  <script src="js/hall.js" charset="utf-8"></script>
+</head>
+
+<body>
+<header>
+  <h2>UEC Kanmeiban Generator - Hall ver.</h2>
+  <div style="text-align:right;">
+    <a href="https://github.com/macchanism/uec-kanmeiban-generator/blob/main/README.md" class="btn btn-link">README</a>
+  </div>
+</header>
+
+<main>
+  <div id="panel-wrapper">
+    <div id="panel">
+      <div id="left-item"></div>
+      <div id="center-item">
+        <p id="JPlabel">アフラックホール</p>
+      </div>
+      <div id="right-item">
+        <div style="margin-right:15px; margin-left:auto;">
+          <p id="ENlabel">Aflac HALL</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="Preview">
+    <form name="Request" action="#">
+      <div id="FormTables">
+        <table>
+          <caption>JP</caption>
+          <tbody style="text-align:left;">
+          <tr>
+            <td>building</td><td><input name="buildingJP" type="text" value="アフラックホール"></td>
+          </tr>
+          <tr>
+            <td>font size</td><td><input name="fontsizeJP" type="number" min="10" max="100" value="30"> px</td>
+          </tr>
+          </tbody>
+        </table>
+        <table>
+          <caption>EN</caption>
+          <tbody style="text-align:left;">
+          <tr>
+            <td>building</td><td><input name="buildingEN" type="text" value="Aflac HALL"></td>
+          </tr>
+          <tr>
+            <td>font size</td><td><input name="fontsizeEN" type="number" min="10" max="100" value="15"> px</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div style="margin-top:15px; text-align:center;">
+        <input type="button" value="Preview" onclick="previewer()" class="btn btn-success">
+      </div>
+    </form>
+  </div>
+
+  <div id="GenerateAndDownload">
+    <p><button type="button" name="generateanddownload" onclick="GenAndDL()" class="btn btn-primary">Generate and Download</button></p>
+    <p>OR</p>
+    <p><button type="button" name="generateandopen" onclick="GenAndOpen()" class="btn btn-secondary">Generate and Open new tab</button></p>
+    <p>(Downloadできないときは、新しいタブで画像を開いて、長押しや右クリックして保存)</p>
+  </div>
+
+  <div id="ShareButton">
+    <a href="https://twitter.com/share?url=https://uec-kanmeiban-generator.matchaism.net" class="twitter-share-button" data-text="UniqueでExcitingなUECの舘名板ジャネレーター" data-hashtags="UECKanmeibanGenerator" data-show-count="false">Tweet</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+</main>
+
+<footer>
+  <small>Copyright &copy; maccha(macchanism) All Rights Reserved.</small>
+</footer>
+</body>
+</html>
