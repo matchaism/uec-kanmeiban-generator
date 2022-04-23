@@ -54,3 +54,15 @@ footer {
   margin-right:auto;
   text-align:center;
 }
+
+.parent-of-center {
+  display: flex;
+  margin: 20px auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-content {
+  display: block;
+  margin: auto 10px;
+}

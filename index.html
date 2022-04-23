@@ -76,8 +76,20 @@
           </tbody>
         </table>
       </div>
-      <div style="margin-top:15px; text-align:center;">
-        <input type="button" value="Preview" onclick="previewer()" class="btn btn-success">
+
+      <div class="parent-of-center">
+        <div class="form-check center-content">
+          <input class="form-check-input" type="radio" name="PlaceSelection" value="east" id="Radio-East" checked>
+          <label class="form-check-label" for="Radio-East">East</label>
+        </div>
+        <div class="form-check center-content">
+          <input class="form-check-input" type="radio" name="PlaceSelection" value="west" id="Radio-West">
+          <label class="form-check-label" for="Radio-West">West</label>
+        </div>
+      </div>
+
+      <div class="parent-of-center">
+        <input type="button" value="Preview" onclick="previewer()" class="btn btn-success center-content">
       </div>
     </form>
   </div>

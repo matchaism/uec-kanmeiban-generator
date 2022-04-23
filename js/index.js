@@ -7,6 +7,11 @@ function previewer() {
   $("#ENlabel").css("font-size", document.Request.fontsizeEN.value+"px");
   $("#ENlabel").css("margin-top", document.Request.TpositionEN.value+"px");
   $("#ENlabel").css("margin-left", document.Request.LpositionEN.value+"px");
+
+  $("#band").css("background-color", "#32D032");
+  if($('input[name=PlaceSelection]:checked').val() === "west"){
+    $("#band").css("background-color", "#FF6347");
+  }
 }
 
 async function generateCanvas(){
