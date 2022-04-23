@@ -17,6 +17,15 @@ footer {
   text-align:center;
 }
 
+#FormTables caption {
+  margin-bottom:10px;
+}
+
+#FormTables input {
+  padding:5px;
+  margin-left:5px;
+}
+
 #Preview {
   margin:50px auto;
 }
